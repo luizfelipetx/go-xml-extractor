@@ -87,8 +87,6 @@ func makeXML(keyword string, priceFrom int, priceTo int, category string, full s
 		//fmt.Println(doc.Get("product_images"))
 
 		deepLink := "protocol://product/" + doc.Get("object_id").(string)
-		extra_deeplink_ios := Applink{"ios_url", deepLink}
-		extra_store := Applink{"ios_app_store_id", "1031983829"}
 		extra_deeplink_android := Applink{"android_url", deepLink}
 
 		//android_app_name
